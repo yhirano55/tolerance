@@ -3,17 +3,16 @@
 require_relative 'tolerance/hook_methods'
 require_relative 'tolerance/version'
 
-require 'pry'
-
 module Tolerance # :nodoc:
-  def self.tracer
-    @tracer ||= TracePoint.new(:end) do |t|
-      next if t.self.singleton_class? || t.self.ancestors.size == 1
-
-      t.self.include HookMethods
-      t.self.extend HookMethods
+  def self.enable!
+    ::Object.class_eval do
+      def self.inherited(klass)
+        super
+        klass.include HookMethods
+        klass.extend HookMethods
+      end
     end
   end
 
-  tracer.enable
+  enable!
 end
