@@ -1,6 +1,8 @@
 # Tolerance
 
-Regards almost of all typo as tolerance:wave::alien:
+Regards almost of all typo as tolerance.
+
+*CAUTION: This gem is experimental one. Don't use for your real product*
 
 ## Installation
 
@@ -43,7 +45,7 @@ Foo.sey!  # => :say!
 Foo.sayyy # => :say!
 ```
 
-Regards almost of all typo as **tolerance**...!! Bye typo, forever..:wave::alien:
+Regards almost of all typo as **tolerance**...!! Bye typo, forever..:wave:
 
 ## License
 
