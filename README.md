@@ -1,6 +1,6 @@
 # Tolerance
 
-Regards almost of all typo as tolerance
+Regards almost of all typo as tolerance:wave::alien:
 
 ## Installation
 
@@ -28,25 +28,22 @@ class Foo
     __method__
   end
 
-  def self.hello
+  def self.say!
     __method__
   end
 end
 
 foo = Foo.new
 
-foo.hello   # => :hello
-foo.helle   # => :hello
-foo.hellooo # => :hello
-
-Foo.hello   # => :hello
-Foo.helle   # => :hello
-Foo.hellooo # => :hello
+foo.hello # => :hello
+foo.pello # => :hello
+foo.hel_o # => :hello
+Foo.say!  # => :say!
+Foo.sey!  # => :say!
+Foo.sayyy # => :say!
 ```
 
-Regards almost of all typo as tolerance...!! Goodbye typo, forever..!!
-
-*CAUTION: This gem is for development only*
+Regards almost of all typo as **tolerance**...!! Bye typo, forever..:wave::alien:
 
 ## License
 
